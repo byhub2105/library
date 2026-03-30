@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{% block title%}Про книгу{%endblock%}
+{% block content%}
+<section class="sec4">
+    <div class="sec-book ">
+        <div class="sec-book-wrap ">
+            <a href="/library">До бібліотеки</a>
+            <h3 class="book-name">{{book.title}}</h3>
+            <h3 class="book-author">{{book.author}}</h3>
+            <h3 class="book-year">Написано: {{book.year}}</h3>
+            <p>Опис про книгу</p>
+            <h3 class="book-desc">{{book.description}}</h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

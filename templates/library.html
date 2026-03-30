@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title%} Бібліотека{% endblock%}
+{%block content%}
+
+<form method="post" class="add-book flex" action="/library" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Введіть назву книги">
+    <input type="text" name="author" placeholder="Укажіть автора">
+    <input type="text" name="description" placeholder="Опис до книги">
+    <input type="date" name="year">
+    <button type="submit">Додати</button>
+</form>
+<ul class="list flex">
+    {% for book in books %}
+    <li class="list-item flex">
+        <h2>{{ book.title}}</h2>
+        <h2>{{ book.author}}</h2>
+        <h2>Написано: {{ book.year}}</h2>
+        <a href="/book/{{ book.id}}" class="desc">Детальніше</a>
+        <a href="/delete/{{ book.id}}" class="delete">Видалити</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

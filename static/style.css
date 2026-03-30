@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+html{
+    background-color: #1e1e1e;
+}
+header{
+    width: 100%;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+main{
+    background-color: #1e1e1e;
+}
+.container{
+    justify-content: center;
+}
+.flex {
+    display: flex;
+}
+
+.header-wrap {
+    height: 150px;
+    align-items: center;
+    /* background-color: floralwhite; */
+    background-color: #1e1e1e;
+}
+
+.header-menu {
+    justify-content: center;
+    gap: 45px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+
+/*---------------- main ---------------*/
+.add-book {
+    /* margin-top: 55px; */
+    justify-content: center;
+    align-items: center;
+    width: 1180px;
+    input::placeholder {
+    color: white;
+}
+    input {
+        font-size: 20px;
+        background-color: #707070;
+        color: white;
+    }
+    button{
+        font-size: 20px;
+    }
+}
+
+.list {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 54px;
+}
+
+.list-item {
+    h2{
+        color: aliceblue;
+    }
+    margin-top: 19px;
+    display: grid;
+    border-radius: 17px;
+    grid-template-columns: 2fr 0.5fr 6fr 2fr 0.5fr;
+    align-items: flex-end;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 460px;
+    width: 920px;
+    background-color: #3d3d3d;
+    gap: 75px;
+    a{
+        text-decoration: none;
+    }
+    .delete{
+        color: red;
+    }
+    .desc{
+        color: blue ;
+    }
+}
+/* -----------sec4-------------- */
+.sec-book-wrap{
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    flex-direction: column;
+    p{
+        text-align: center;
+        font-size: 38px;
+        width: 700px;
+        border-radius: 25px;
+        background-color: #707070;
+    }
+    .book-desc{
+        margin-left: 25px;
+        font-size: 28px;
+    }
+}
